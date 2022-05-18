@@ -4,7 +4,7 @@ import java.util.List;
 public class App {
     private static List<Processo> threads = new ArrayList<Processo>();
     public static void main(String[] args) throws Exception {
-        
+
         new Thread(){
             @Override
             public void run() {
@@ -17,20 +17,22 @@ public class App {
             public void run() {
                 mataCoordenador();
             }
-        }.start();
+        }.start();   
     }
     public static void novoProcesso(){
         do{
-            long id;
-            do{
-            id = (long) (Math.random() * 10000);
-            }while(possuiId(id));
-            Processo p = new Processo(id,threads);
-            threads.add(p);
-            p.start();
-            System.out.println(" NOVO processo " + id + " criado");
+            if(threads.size() < 10){
+                long id;
+                do{
+                id = (long) (Math.random() * 10000);
+                }while(possuiId(id));
+                Processo p = new Processo(id,threads);
+                threads.add(p);
+                p.start();
+                System.out.println(" NOVO processo " + id + " criado");
+            }
             try{
-                Thread.sleep(3000);
+                Thread.sleep(30000);
             }catch(Exception e){
                 e.printStackTrace();
             }

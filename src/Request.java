@@ -1,10 +1,10 @@
-import java.util.Date;
+
 
 public class Request {
     long id;
-    Date data;
+    long data;
 
-    public Request(long id, Date data) {
+    public Request(long id, long data) {
         this.id = id;
         this.data = data;
     }
