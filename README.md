@@ -1,18 +1,9 @@
-## Getting Started
+## Algoritimo de Bully
+  Algoritimo de coordenação de acessos a área critica, responsavel por eleger um coordenador e controlar por meio de Threads o acesso individual ao metodo critico
+  
+## Referência
+Inspirado no Codigo Pythons disponivel em:
+https://www.youtube.com/watch?v=wevb0pAPKmk
+https://www.youtube.com/watch?v=QrionMy6bNA
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+originalmente construido pro Sara Helena Régis Theiss
